@@ -2,7 +2,8 @@
 // import axios from "axios";
 
 
-const API_KEY = 'a7d70370ee6e1d541e1b1582683c71d8'; // Replace with your API key
+const ENCODED_API_KEY = 'YTdkNzAzNzBlZTZlMWQ1NDFlMWIxNTgyNjgzYzcxZDg='; // Replace with your API key
+const API_KEY = atob(encodedKey);
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather';
 
 document.getElementById('fetchWeather').addEventListener('click', async () => {
